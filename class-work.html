@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #f5f6f8;
+        }
+        .main{
+            background-color:#ffffff;
+            max-width: 900px;
+           border-radius: 15px;
+            margin: auto;
+            min-height: 200px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .git{
+            height: 140px;
+            width: 140px;
+            border-radius: 90px;
+            border: 4px solid  #007bff;
+        }
+        .git:hover{
+            border: 4px solid  rgb(15, 43, 165);
+            transition: 0.3s;
+        }
+        .main1{
+            display: flex;
+            gap: 40px;
+            padding-top: 40px;
+            padding-left: 40px;
+
+        }
+        .name{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .info{
+            /* padding-top: 20px; */
+        }
+        .at{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: #007bfb;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 50px;
+        }
+        .at:hover{
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+        .edit{
+            border: none;
+            outline: none;
+            background-color: #007bfb;
+            color: white;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 7px;
+            margin-top: 18px;
+        }
+        .edit:hover{
+             background-color: rgb(15, 48, 196);
+            color: white;
+            transition: 0.3s;
+        }
+        .more-info{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .status{
+            display: flex;
+            gap: 200px;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            padding: 20px;
+            background-color:#f8f9fb;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 800px;
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .status:hover{
+            background-color: rgb(238, 235, 235);
+            transition: 0.3s;
+        }
+        .number{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            font-weight: 700;
+            color:  #007bfb;
+            padding-bottom: 5px;
+        }
+        .description{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+        .text{
+            padding-top: 52px;
+            padding-left: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-right: 40px;
+            padding-bottom: 50px;
+        }
+        #me{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #22232d;
+        }
+        #me2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 19px;
+            color: #22232d;
+        }
+        .text2{
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .info2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+        }
+        #titles{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            padding-bottom: 7px;
+            color: #22232d;
+        }
+        #description2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #7e7d85;
+        }
+        .skill{
+            padding-top: 53px;
+            padding-left: 40px;
+        }
+        .info3{
+            display: flex;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        /* .ifno3 p{
+            padding: 20px;
+        } */
+        #more-text{
+            
+            padding-left: 17px;
+            padding-right: 17px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            color: #147fe4;
+            background-color:#e9f2ff;
+            border-radius: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main1">
+            <div>
+                <img src="pic.png" alt="github pic" class="git">
+            </div>
+            <div class="info">
+                <p class="name">Daniel Okafor</p>
+                <p class="at">@daniel</p>
+                <p class="more-info">Web Designer | Tech Enthusiast | Building amazing digital experiences.</p>
+                <button class="edit">Edit profile</button>
+            </div>
+        </div>
+        <div class="status">
+            <div>
+                <p class="number">125</p>
+                <p class="description">posts</p>
+            </div>
+            <div>
+                <p class="number">2.5k</p>
+                <p class="description">Followers</p>
+            </div>
+            <div>
+                <p class="number">350</p>
+                <p class="description">following</p>
+            </div>
+        </div>
+        <div class="text">
+            <p id="me">About Me</p>
+            <p id="me2">Hello! My name is daniel Okafor. I am passionate about technology and web development. 
+                I enjoy creating websites and learning new programming skills.</p>
+        </div>
+        <div class="text2">
+            <p id="me">Personal Information</p>
+            <div class="info2">
+                <div>
+                    <p id="titles">Email</p>
+                    <p id="description2">daniel@example.com</p>
+                </div>
+                <div>
+                    <p id="titles">Location</p>
+                    <p id="description2">Benin, Edo-state</p>
+                </div>
+                <div>
+                    <p id="titles">Occupation</p>
+                    <p id="description2">Web Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <p id="me">Skills</p>
+            <div class="info3">
+                 <p id="more-text">HTML</p> <p id="more-text">CSS</p> <p id="more-text">Javascript</p> <p id="more-text">Python</p> <p id="more-text">UI/UX</p>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
